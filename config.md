@@ -70,7 +70,7 @@ The parameters are similar to the ones in [the Linux mount system call](http://m
 ### Windows Example
 
 ```json
-"mounts": [
+"mounts": {
     "myfancymountpoint": {
         "destination": "C:\\Users\\crosbymichael\\My Fancy Mount Point\\",
         "type": "ntfs",
@@ -232,7 +232,7 @@ If a hook returns a non-zero exit code, then an error is logged and the remainin
         ],
         "poststart": [
             {
-                "path": "/usr/bin/notify-start"
+                "path": "/usr/bin/notify-start",
                 "timeout": 5
             }
         ],
